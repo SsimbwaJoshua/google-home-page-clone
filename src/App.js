@@ -25,8 +25,8 @@ function App() {
               <span className="l">l</span>
               <span className="e">e</span>
             </div>
-            <div>
-              <AiOutlineSearch />
+            <div className="the-whole-input-filed">
+              <AiOutlineSearch className="search-icon" />
               <form>
                 <input
                   className="Input-field"
@@ -34,18 +34,43 @@ function App() {
                   defaultValue={""}
                 />
               </form>
-              <div>
-                <button></button>
+              <div className="pic-btns">
+                <button>
+                  <img src="./images/mic.PNG" />
+                </button>
+                <button>
+                  <img src="./images/Camera.PNG" />
+                </button>
               </div>
             </div>
             <div>
-              <p>+</p>
-              <p>Add Shortcut</p>
+              <button>Google Search</button>
+              <button>I'm Feeling Lucky</button>
+            </div>
+            <div>
+              <p>Google offered in :</p>
+              <a href="#">luganda</a>
+              <a href="#">Kiswahili</a>
+              <a href="#">Ikinyarwanda</a>
+              <a href="#">luo</a>
+              <a href="#">Runyakitara</a>
             </div>
           </section>
           <footer className="footer">
-            <p>Light Blue</p>
-            <p>##</p>
+            <p>Uganda</p>
+            <div>
+              <div>
+                <a href="#">About</a>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How search works</a>
+              </div>
+              <div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+              </div>
+            </div>
           </footer>
         </div>
       </div>

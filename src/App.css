@@ -46,11 +46,26 @@ html {
   color: rgba(46, 160, 67);
 }
 
+.the-whole-input-filed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .Input-field {
-  width: 30rem;
+  width: 40rem;
+  height: 3rem;
+}
+.search-icon {
+  margin: 0 1.2rem;
+  font-size: 1.8rem;
+}
+.pic-btns {
+  margin: 0 1.2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
