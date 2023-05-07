@@ -1,6 +1,8 @@
 import "./App.css";
 import { CgMenuGridO } from "react-icons/cg";
 import { AiOutlineSearch } from "react-icons/ai";
+import cameraImage from "./images/Camera.PNG";
+import microImage from "./images/mic.PNG";
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,7 @@ function App() {
               <span className="l">l</span>
               <span className="e">e</span>
             </div>
+
             <div className="the-whole-input-filed">
               <AiOutlineSearch className="search-icon" />
               <form>
@@ -35,37 +38,48 @@ function App() {
                 />
               </form>
               <div className="pic-btns">
-                <button>
-                  <img src="./images/mic.PNG" />
+                <button className="pic-btn">
+                  <img src={microImage} height={30} />
                 </button>
-                <button>
-                  <img src="./images/Camera.PNG" />
+                <button className="pic-btn">
+                  <img src={cameraImage} height={24} />
                 </button>
               </div>
             </div>
+
             <div>
-              <button>Google Search</button>
-              <button>I'm Feeling Lucky</button>
+              <button className="after-btns">Google Search</button>
+              <button className="after-btns">I'm Feeling Lucky</button>
             </div>
-            <div>
-              <p>Google offered in :</p>
-              <a href="#">luganda</a>
-              <a href="#">Kiswahili</a>
-              <a href="#">Ikinyarwanda</a>
-              <a href="#">luo</a>
-              <a href="#">Runyakitara</a>
+            <div className="languages">
+              <span>Google offered in :</span>
+              <a href="#" className="language">
+                luganda
+              </a>
+              <a href="#" className="language">
+                Kiswahili
+              </a>
+              <a href="#" className="language">
+                Ikinyarwanda
+              </a>
+              <a href="#" className="language">
+                luo
+              </a>
+              <a href="#" className="language">
+                Runyakitara
+              </a>
             </div>
           </section>
-          <footer className="footer">
-            <p>Uganda</p>
-            <div>
-              <div>
+          <footer>
+            <p className="uganda">Uganda</p>
+            <div className="footer-links">
+              <div className="footer-links-left">
                 <a href="#">About</a>
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
                 <a href="#">How search works</a>
               </div>
-              <div>
+              <div className="footer-links-right">
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
                 <a href="#">Settings</a>

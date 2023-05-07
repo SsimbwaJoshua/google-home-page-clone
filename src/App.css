@@ -9,7 +9,7 @@ html {
 }
 
 .whole-page {
-  margin: 3rem;
+  margin: 2rem 2rem 0.5rem 2rem;
 }
 .navigation {
   display: flex;
@@ -18,7 +18,7 @@ html {
   align-items: end;
 }
 .sec-foot {
-  min-height: 88vh;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -47,13 +47,18 @@ html {
 }
 
 .the-whole-input-filed {
+  max-width: 55rem;
+  margin: 3rem auto 4rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 24px;
 }
 .Input-field {
+  border: none;
   width: 40rem;
-  height: 3rem;
+  height: 4rem;
 }
 .search-icon {
   margin: 0 1.2rem;
@@ -61,11 +66,49 @@ html {
 }
 .pic-btns {
   margin: 0 1.2rem;
+  height: 4rem;
   display: flex;
-  gap: 2rem;
+  gap: 1.4rem;
+}
+.pic-btn {
+  border: none;
+  background-color: white;
 }
 
-.footer {
-  /* display: flex;
-  justify-content: space-between; */
+.after-btns {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 5px;
+  padding: 1rem 1.8rem;
+  margin-left: 3rem;
+}
+
+.languages {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+.language {
+  margin-left: 1rem;
+}
+
+.uganda {
+  background-color: #ddd;
+  color: #70757a;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.footer-links {
+  background-color: #ddd;
+  color: #70757a;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-links-left,
+.footer-links-right {
+  display: flex;
+  gap: 2rem;
 }
