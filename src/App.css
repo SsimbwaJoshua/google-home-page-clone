@@ -9,16 +9,44 @@ html {
 }
 
 .whole-page {
-  margin: 2rem 2rem 0.5rem 2rem;
+  margin-top: 2rem;
 }
 .navigation {
+  margin-right: 2rem;
   display: flex;
   justify-content: end;
   gap: 1.6rem;
-  align-items: end;
+  align-items: center;
 }
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #3c4043;
+}
+
+.nav-link:active,
+.nav-link:hover {
+  text-decoration: underline;
+}
+.menu-apps {
+  border: none;
+  background-color: white;
+}
+.menu-app {
+  color: #3c4043;
+  width: 3rem;
+  height: 3rem;
+}
+
+.sign-in {
+  padding: 2px;
+  background-color: rgba(66, 133, 244);
+}
+
 .sec-foot {
-  min-height: 93vh;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,6 +88,9 @@ html {
   width: 40rem;
   height: 4rem;
 }
+.Input-field:focus {
+  outline: none;
+}
 .search-icon {
   margin: 0 1.2rem;
   font-size: 1.8rem;
@@ -76,11 +107,13 @@ html {
 }
 
 .after-btns {
+  color: #3c4043;
   background-color: #f8f9fa;
   border: 1px solid #f8f9fa;
   border-radius: 5px;
   padding: 1rem 1.8rem;
   margin-left: 3rem;
+  font-size: 1.4rem;
 }
 
 .languages {
@@ -111,4 +144,15 @@ html {
 .footer-links-right {
   display: flex;
   gap: 2rem;
+}
+
+.foot-link:link,
+.foot-link:visited {
+  text-decoration: none;
+  color: #70757a;
+}
+
+.foot-link:active,
+.foot-link:hover {
+  text-decoration: underline;
 }

@@ -9,12 +9,16 @@ function App() {
       <div className="whole-page">
         <header>
           <nav className="navigation">
-            <a href="www.gmail.com">Gmail</a>
-            <a href="www.googleImages.com">images</a>
-            <button>
-              <CgMenuGridO />
+            <a className="nav-link" href="www.gmail.com">
+              Gmail
+            </a>
+            <a className="nav-link" href="www.googleImages.com">
+              Images
+            </a>
+            <button className="menu-apps">
+              <CgMenuGridO className="menu-app" />
             </button>
-            <button>Sign In</button>
+            <button className="sign-in">Sign In</button>
           </nav>
         </header>
         <div className="sec-foot">
@@ -39,7 +43,7 @@ function App() {
               </form>
               <div className="pic-btns">
                 <button className="pic-btn">
-                  <img src={microImage} height={30} />
+                  <img src={microImage} height={28} />
                 </button>
                 <button className="pic-btn">
                   <img src={cameraImage} height={24} />
@@ -74,15 +78,29 @@ function App() {
             <p className="uganda">Uganda</p>
             <div className="footer-links">
               <div className="footer-links-left">
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How search works</a>
+                <a href="#" className="foot-link">
+                  About
+                </a>
+                <a href="#" className="foot-link">
+                  Advertising
+                </a>
+                <a href="#" className="foot-link">
+                  Business
+                </a>
+                <a href="#" className="foot-link">
+                  How search works
+                </a>
               </div>
               <div className="footer-links-right">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
+                <a href="#" className="foot-link">
+                  Privacy
+                </a>
+                <a href="#" className="foot-link">
+                  Terms
+                </a>
+                <a href="#" className="foot-link">
+                  Settings
+                </a>
               </div>
             </div>
           </footer>
