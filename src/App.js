@@ -35,18 +35,14 @@ function App() {
             <div className="the-whole-input-filed">
               <AiOutlineSearch className="search-icon" />
               <form>
-                <input
-                  className="Input-field"
-                  placeholder="Search google or type a URL"
-                  defaultValue={""}
-                />
+                <input className="Input-field" defaultValue={""} />
               </form>
               <div className="pic-btns">
                 <button className="pic-btn">
-                  <img src={microImage} height={28} />
+                  <img src={microImage} height={28} className="mic" />
                 </button>
                 <button className="pic-btn">
-                  <img src={cameraImage} height={24} />
+                  <img src={cameraImage} height={24} className="cam" />
                 </button>
               </div>
             </div>
@@ -56,7 +52,7 @@ function App() {
               <button className="after-btns">I'm Feeling Lucky</button>
             </div>
             <div className="languages">
-              <span>Google offered in :</span>
+              <span>Google offered in:</span>
               <a href="#" className="language">
                 luganda
               </a>
