@@ -7,12 +7,12 @@
 html {
   font-size: 62.5%;
 }
-body {
-  font-family: Arial, sans-serif;
-}
+/* body {
+  font-family: arial, sans-serif;
+} */
 
 .whole-page {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .navigation {
   margin-right: 2rem;
@@ -20,6 +20,7 @@ body {
   justify-content: end;
   gap: 1.6rem;
   align-items: center;
+  position: relative;
 }
 
 .nav-link:link,
@@ -34,17 +35,24 @@ body {
   text-decoration: underline;
 }
 .menu-apps {
+  width: 4rem;
+  height: 4rem;
   border: none;
   background-color: white;
 }
 .menu-app {
+  padding: 0.3rem;
   color: #3c4043;
   width: 3rem;
   height: 3rem;
 }
 
+.menu-apps:hover {
+  background-color: #e7e7e7;
+  border-radius: 50%;
+}
+
 .sign-in {
-  padding: 2px;
   background-color: rgba(66, 133, 244);
   border: none;
   padding: 0.3rem 0.6rem;
@@ -52,7 +60,7 @@ body {
 }
 
 .sec-foot {
-  min-height: 95vh;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -133,6 +141,11 @@ body {
   text-decoration: none;
 }
 
+.language:hover,
+.language:active {
+  text-decoration: underline;
+}
+
 .uganda {
   background-color: #f2f2f2;
   color: #70757a;
@@ -165,8 +178,44 @@ body {
 .foot-link:hover {
   text-decoration: underline;
 }
+/* /////////////////////The aside -button/////////////////////// */
 
-/* media queries */
+.hidden {
+  display: none;
+}
+.the-aside {
+  width: 35rem;
+  max-height: 45rem;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* border: 2px solid #ccc; */
+  /* box-shadow: 3px 3px 3px #ccc; */
+  border-radius: 5px;
+
+  position: absolute;
+  top: 6rem;
+  right: 0;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.aside-logos {
+  width: 4.5rem;
+}
+.aside-text {
+  font-size: 1.6rem;
+}
+/*///////////////////////// media queries //////////////////////////*/
 @media (max-width: 40em) {
   html {
     font-size: 56.25%;

@@ -3,19 +3,26 @@ import { CgMenuGridO } from "react-icons/cg";
 import { AiOutlineSearch } from "react-icons/ai";
 import cameraImage from "./images/Camera.PNG";
 import microImage from "./images/mic.PNG";
+import { AsideMenu } from "./components/AsideMenu";
+
 function App() {
+  const menuAppClick = () => {
+    document.querySelector(".the-whole-aside").classList.toggle("hidden");
+  };
+
   return (
     <div className="App">
       <div className="whole-page">
         <header>
           <nav className="navigation">
+            <AsideMenu />
             <a className="nav-link" href="www.gmail.com">
               Gmail
             </a>
             <a className="nav-link" href="www.googleImages.com">
               Images
             </a>
-            <button className="menu-apps">
+            <button className="menu-apps" onClick={menuAppClick}>
               <CgMenuGridO className="menu-app" />
             </button>
             <button className="sign-in">Sign In</button>
