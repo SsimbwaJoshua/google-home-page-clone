@@ -91,7 +91,7 @@ html {
 
 .the-whole-input-filed {
   /* added 2 rem on each */
-  max-width: 57rem;
+  width: 57rem;
   margin: 3rem auto 4rem auto;
   display: flex;
   justify-content: center;
@@ -99,10 +99,13 @@ html {
   border: 1px solid #ccc;
   border-radius: 24px;
 }
+.the-whole-input-filed:hover {
+  box-shadow: 2px 2px 8px 5px #eee;
+}
 .Input-field {
   border: none;
   width: 40rem;
-  height: 4rem;
+  height: 4.5rem;
   font-size: 1.8rem;
 }
 .Input-field:focus {
@@ -125,6 +128,7 @@ html {
   display: flex;
   gap: 1.4rem;
 }
+
 .pic-btn {
   border: none;
   background-color: white;
@@ -138,6 +142,9 @@ html {
   padding: 1rem 1.8rem;
   margin-left: 3rem;
   font-size: 1.4rem;
+}
+.after-btns:hover {
+  border: 1px solid #ccc;
 }
 
 .languages {
@@ -202,9 +209,9 @@ html {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* border: 2px solid #ccc; */
-  /* box-shadow: 3px 3px 3px #ccc; */
+  box-shadow: 2px 2px 8px 5px #eee;
   border-radius: 5px;
+  background-color: white;
 
   position: absolute;
   top: 6rem;
@@ -281,8 +288,8 @@ html {
     font-size: 1.2rem;
   }
   .menu-app {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
 
@@ -358,8 +365,8 @@ html {
     font-size: 1rem;
   }
   .menu-app {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }
 @media (max-width: 22em) {

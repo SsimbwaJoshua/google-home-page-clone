@@ -68,10 +68,16 @@ function App() {
                     X
                   </button>
                 )}
-                <button className="pic-btn">
+                <button
+                  className="pic-btn"
+                  style={{ display: text ? "none" : "block" }}
+                >
                   <img src={microImage} height={28} className="mic" />
                 </button>
-                <button className="pic-btn">
+                <button
+                  className="pic-btn"
+                  style={{ display: text ? "none" : "block" }}
+                >
                   <img src={cameraImage} height={24} className="cam" />
                 </button>
               </div>
