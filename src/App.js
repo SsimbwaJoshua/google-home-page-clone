@@ -4,10 +4,24 @@ import { AiOutlineSearch } from "react-icons/ai";
 import cameraImage from "./images/Camera.PNG";
 import microImage from "./images/mic.PNG";
 import { AsideMenu } from "./components/AsideMenu";
+import { useState } from "react";
 
 function App() {
+  // for the menu button
   const menuAppClick = () => {
     document.querySelector(".the-whole-aside").classList.toggle("hidden");
+  };
+
+  // for the input field
+  const [text, setText] = useState("");
+
+  const whenTyping = (event) => {
+    setText(event.target.value);
+  };
+
+  // reseting the input field
+  const resetClick = () => {
+    setText("");
   };
 
   return (
@@ -42,9 +56,18 @@ function App() {
             <div className="the-whole-input-filed">
               <AiOutlineSearch className="search-icon" />
               <form>
-                <input className="Input-field" defaultValue={""} />
+                <input
+                  className="Input-field"
+                  value={text}
+                  onChange={whenTyping}
+                />
               </form>
               <div className="pic-btns">
+                {text && (
+                  <button className="reset-btn" onClick={resetClick}>
+                    X
+                  </button>
+                )}
                 <button className="pic-btn">
                   <img src={microImage} height={28} className="mic" />
                 </button>

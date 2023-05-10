@@ -90,7 +90,8 @@ html {
 }
 
 .the-whole-input-filed {
-  max-width: 55rem;
+  /* added 2 rem on each */
+  max-width: 57rem;
   margin: 3rem auto 4rem auto;
   display: flex;
   justify-content: center;
@@ -102,6 +103,7 @@ html {
   border: none;
   width: 40rem;
   height: 4rem;
+  font-size: 1.8rem;
 }
 .Input-field:focus {
   outline: none;
@@ -110,6 +112,12 @@ html {
   margin: 0 1.2rem;
   font-size: 1.8rem;
   color: #bbb;
+}
+.reset-btn {
+  color: #bbb;
+  font-size: 1.8rem;
+  border: none;
+  background-color: white;
 }
 .pic-btns {
   margin: 0 1.2rem;
