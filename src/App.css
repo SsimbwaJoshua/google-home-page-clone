@@ -55,7 +55,7 @@ html {
 .sign-in {
   background-color: rgba(66, 133, 244);
   border: none;
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 3px;
 }
 
@@ -91,7 +91,7 @@ html {
 
 .the-whole-input-filed {
   /* added 2 rem on each */
-  width: 57rem;
+  width: 58rem;
   margin: 3rem auto 4rem auto;
   display: flex;
   justify-content: center;
@@ -142,6 +142,7 @@ html {
   padding: 1rem 1.8rem;
   margin-left: 3rem;
   font-size: 1.4rem;
+  font-family: arial, sans-serif;
 }
 .after-btns:hover {
   border: 1px solid #ccc;
@@ -164,23 +165,25 @@ html {
 .uganda {
   background-color: #f2f2f2;
   color: #70757a;
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
+  padding: 1.3rem 3rem;
+  font-size: 1.4rem;
+  font-family: arial, sans-serif;
   border-bottom: 1px solid #dadce0;
 }
 
 .footer-links {
   background-color: #f2f2f2;
   color: #70757a;
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
+  padding: 1.3rem 3rem;
+  font-size: 1.4rem;
+  font-family: arial, sans-serif;
   display: flex;
   justify-content: space-between;
 }
 .footer-links-left,
 .footer-links-right {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .foot-link:link,
@@ -245,6 +248,7 @@ html {
   .footer-links {
     padding: 1rem 8rem;
     font-size: 1.2rem;
+    justify-content: space-evenly;
   }
   .footer-links-left,
   .footer-links-right {
@@ -348,6 +352,14 @@ html {
   }
   .uganda {
     font-size: 1rem;
+  }
+  .navigation {
+    gap: 0.7rem;
+  }
+  .navigation,
+  .languages,
+  .footer-links {
+    font-size: small;
   }
 }
 @media (max-width: 23em) {

@@ -90,7 +90,7 @@ function App() {
             <div className="languages">
               <span>Google offered in:</span>
               <a href="#" className="language">
-                luganda
+                Luganda
               </a>
               <a href="#" className="language">
                 Kiswahili
